@@ -72,9 +72,9 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'index',
+        path: 'video',
         name: 'video',
-        component: () => import('@/views/video/index'),
+        component: () => import('@/views/video/video'),
         meta: { title: 'video', icon: ''  }
       }
     ]
@@ -84,9 +84,9 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'index',
+        path: 'camera',
         name: 'camera',
-        component: () => import('@/views/camera/index'),
+        component: () => import('@/views/camera/camera'),
         meta: { title: 'camera', icon: '' }
       }
     ]

@@ -25,7 +25,6 @@
 </template>
 
 <script>
-
 import axios from 'axios'
 export default {
 
@@ -69,7 +68,7 @@ export default {
       const fd = new FormData()
       fd.append('file', this.file)
       axios.post(
-        'http://127.0.0.1:5000/image', fd,
+        'http://127.0.0.1:5000/video_feed', fd,
         { headers: { 'Content-Type': 'multipart/form-data' }, responseType: 'arraybuffer' }
 
       ).then(response => {
@@ -79,7 +78,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style scoped>
